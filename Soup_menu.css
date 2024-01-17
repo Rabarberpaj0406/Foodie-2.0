@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+}
+
+#Top_bar {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+#Top_bar #Logo_div img {
+  width: 180px;
+  height: 130px;
+}
+#Top_bar #Pages_div {
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+}
+#Top_bar #Pages_div #OnThis_page {
+  font-weight: bold;
+}
+#Top_bar #Pages_div a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Inter";
+  color: black;
+  margin-right: 20px;
+}
+
+#Steak_div {
+  position: relative;
+}
+#Steak_div #Steak_img {
+  width: 100vw;
+  height: 600px;
+}
+#Steak_div #Steak_info {
+  position: absolute;
+  bottom: 300px;
+  left: 50px;
+  color: azure;
+  font-size: 50px;
+  width: 600px;
+}
+
+#Food_div {
+  width: fit-content;
+  margin: auto;
+  margin-top: 35px;
+}
+#Food_div #Food_option {
+  text-decoration: underline;
+}
+#Food_div a {
+  font-size: 30px;
+  margin-left: 40px;
+  color: black;
+  text-decoration: none;
+}
+
+#Soup_div {
+  width: fit-content;
+  margin: auto;
+}
+#Soup_div .Food_soup {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+#Soup_div .Food_soup:hover {
+  outline: 2px solid black;
+  opacity: 85%;
+}
+
+#Soup_description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1243px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+#Soup_description p {
+  width: 270px;
+  margin-right: 164px;
+}
+
+@media only screen and (min-width: 1921px) {
+  #Top_bar {
+    height: 100px;
+  }
+  #Top_bar #Logo_div img {
+    width: 270px; /* 2 times the doubled width for smaller screens */
+    height: 195px; /* 2 times the doubled height for smaller screens */
+  }
+  #Top_bar #Pages_div a { /* 2 times the doubled font size for smaller screens */
+    margin-right: 30px; /* 2 times the doubled spacing for smaller screens */
+    font-size: 50px;
+  }
+  #Food_div a {
+    font-size: 50px;
+  }
+  #Steak_div #Steak_img {
+    height: 900px; /* 2 times the doubled height for Steak_img */
+  }
+  #Steak_div #Steak_info {
+    bottom: 450px; /* 2 times the doubled bottom position */
+    left: 75px; /* 2 times the doubled left position */
+    font-size: 80px; /* 2 times the doubled font size */
+    width: 900px; /* 2 times the doubled width */
+  }
+  #Soup_div .Food_soup {
+    margin-top: 75px; /* 2 times the doubled margin-top for Food_burger */
+    margin-left: 75px; /* 2 times the doubled margin-left for Food_burger */
+    width: 580px; /* 2 times the doubled width for Food_burger */
+  }
+  #Soup_description {
+    width: 1866px; /* 2 times the doubled width for Burger_description */
+    margin-bottom: 75px; /* 2 times the doubled margin-bottom for Burger_description */
+    margin-top: 30px; /* 2 times the doubled margin-top for Burger_description */
+  }
+  #Soup_description p {
+    width: 405px; /* 2 times the doubled width for paragraphs */
+    margin-right: 246px; /* 2 times the doubled margin-right for paragraphs */
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  #Top_bar #Logo_div img {
+    width: 135px; /* 0.75 times the doubled width for smaller screens */
+    height: 97.5px;
+  }
+  #Top_bar #Pages_div a { /* 0.75 times the doubled font size for smaller screens */
+    margin-right: 15px; /* 0.75 times the doubled spacing for smaller screens */
+  }
+  #Steak_div #Steak_img {
+    height: 450px; /* 0.75 times the doubled height for Steak_img */
+  }
+  #Steak_div #Steak_info {
+    bottom: 225px; /* 0.75 times the doubled bottom position */
+    left: 37.5px; /* 0.75 times the doubled left position */
+    font-size: 37.5px; /* 0.75 times the doubled font size */
+    width: 450px; /* 0.75 times the doubled width */
+  }
+  #Soup_div .Food_soup {
+    margin-top: 37.5px; /* 0.75 times the doubled margin-top for Food_burger */
+    margin-left: 37.5px; /* 0.75 times the doubled margin-left for Food_burger */
+    width: 300px; /* 0.75 times the doubled width for Food_burger */
+  }
+  #Soup_description {
+    width: 933px; /* 0.75 times the doubled width for Burger_description */
+    margin-bottom: 37.5px; /* 0.75 times the doubled margin-bottom for Burger_description */
+    margin-top: 15px; /* 0.75 times the doubled margin-top for Burger_description */
+  }
+  #Soup_description p {
+    width: 202.5px; /* 0.75 times the doubled width for paragraphs */
+    margin-right: 123px; /* 0.75 times the doubled margin-right for paragraphs */
+  }
+}
+/* Styles for mobile displays (360x640 through 414x896) */
+@media only screen and (max-width: 1000px) {
+  /* Styles for desktop displays (1280x720 through 1920x1080) */
+  #Top_bar #Logo_div img {
+    width: 90px; /* Full width for smaller screens */
+    height: 65px;
+  }
+  #Top_bar #Pages_div a {
+    font-size: 22.5px;
+    margin-right: 10px; /* Adjust spacing for smaller screens */
+  }
+  #Steak_div #Steak_img {
+    height: 300px;
+  }
+  #Steak_div #Steak_info {
+    bottom: 150px;
+    left: 25px;
+    font-size: 25px;
+    width: 300px;
+  }
+  #Soup_div .Food_soup {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 200px;
+  }
+  #Soup_description {
+    width: 622px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  #Soup_description p {
+    width: 135px;
+    margin-right: 82px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* Styles for desktop displays (1280x720 through 1920x1080) */
+  #Top_bar #Logo_div img {
+    width: 67.5px; /* 25% smaller width for smaller screens */
+    height: 48.75px; /* 25% smaller height for smaller screens */
+  }
+  #Top_bar #Pages_div a {
+    font-size: 16.875px; /* 25% smaller font size */
+    margin-right: 7.5px; /* 25% smaller spacing for smaller screens */
+  }
+  #Steak_div #Steak_img {
+    height: 225px; /* 25% smaller height for Steak_img */
+  }
+  #Steak_div #Steak_info {
+    bottom: 112.5px; /* 25% smaller bottom position */
+    left: 18.75px; /* 25% smaller left position */
+    font-size: 18.75px; /* 25% smaller font size */
+    width: 225px; /* 25% smaller width */
+  }
+  #Food_div a {
+    font-size: 16.875px; /* 25% smaller font size */
+  }
+  #Soup_div .Food_soup {
+    margin-top: 18.75px; /* 25% smaller margin-top for Food_burger */
+    margin-left: 18.75px; /* 25% smaller margin-left for Food_burger */
+    width: 150px; /* 25% smaller width for Food_burger */
+  }
+  #Soup_description {
+    width: 466.5px; /* 25% smaller width for Burger_description */
+    margin-bottom: 18.75px; /* 25% smaller margin-bottom for Burger_description */
+    margin-top: 7.5px; /* 25% smaller margin-top for Burger_description */
+  }
+  #Soup_description p {
+    width: 101.25px; /* 25% smaller width for paragraphs */
+    margin-right: 61.5px; /* 25% smaller margin-right for paragraphs */
+    font-size: 10px;
+  }
+}

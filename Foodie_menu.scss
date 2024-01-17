@@ -1,0 +1,341 @@
+*{
+  margin: 0;  
+}
+
+#Top_bar{
+  
+  height: 75px;
+  display: flex;
+  align-items: center;
+  
+  #Logo_div{
+
+    img{
+      width: 180px;
+      height: 130px;
+    }  
+  }
+  
+  #Pages_div{
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: end;
+    
+    #OnThis_page{
+      font-weight: bold;
+    }
+
+    a{
+      text-decoration: none;
+      font-size: 30px;
+      font-family: "Inter";
+      color: black;
+      margin-right: 20px;
+    }
+
+  }
+  
+}
+
+#Steak_div{
+
+  position: relative;
+
+  #Steak_img{
+    width: 100vw;
+    height: 600px;
+  }
+
+  #Steak_info{
+    position: absolute; 
+    bottom: 300px;
+    left: 50px;
+    color: azure;
+    font-size: 50px;
+    width: 600px;
+  }
+
+}
+
+#Food_div{
+
+  width: fit-content;
+  margin: auto;
+  margin-top: 35px;
+
+  #Food_option{
+    text-decoration: underline;
+  }
+
+  a{
+    font-size: 30px;
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+  }
+  
+}
+
+#Burger_div{
+
+  width: fit-content;
+  margin: auto;
+
+  .Food_burger{
+    margin-top: 50px;
+    margin-left: 50px;
+
+    &:hover{
+      outline: 2px solid black;
+      opacity: 85%;
+      // border-bottom: 1px solid salmon;
+    }
+  
+  }
+
+}
+
+#Burger_description{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1243px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+  p{
+    width: 270px;
+    margin-right: 164px;
+  }
+
+}
+
+/* Styles for desktop displays (1280x720 through 1920x1080) */
+@media only screen and (min-width: 1921px) {
+
+  #Top_bar {
+
+    height: 100px;
+
+    #Logo_div img {
+      width: 270px; /* 2 times the doubled width for smaller screens */
+      height: 195px; /* 2 times the doubled height for smaller screens */
+    }
+  
+    #Pages_div{
+      a { /* 2 times the doubled font size for smaller screens */
+        margin-right: 30px; /* 2 times the doubled spacing for smaller screens */
+        font-size: 50px;
+      }
+    }
+  }
+
+  #Food_div a{
+    font-size: 50px;
+  }
+  
+  #Steak_div {
+
+    #Steak_img {
+      height: 900px; /* 2 times the doubled height for Steak_img */
+    }
+  
+    #Steak_info {
+      bottom: 450px; /* 2 times the doubled bottom position */
+      left: 75px; /* 2 times the doubled left position */
+      font-size: 80px; /* 2 times the doubled font size */
+      width: 900px; /* 2 times the doubled width */
+    }
+  }
+
+  
+  #Burger_div {
+    .Food_burger {
+      margin-top: 75px; /* 2 times the doubled margin-top for Food_burger */
+      margin-left: 75px; /* 2 times the doubled margin-left for Food_burger */
+      width: 580px; /* 2 times the doubled width for Food_burger */
+    }
+  }
+  
+  #Burger_description {
+    width: 1866px; /* 2 times the doubled width for Burger_description */
+    margin-bottom: 75px; /* 2 times the doubled margin-bottom for Burger_description */
+    margin-top: 30px; /* 2 times the doubled margin-top for Burger_description */
+  
+    p {
+      width: 405px; /* 2 times the doubled width for paragraphs */
+      margin-right: 246px; /* 2 times the doubled margin-right for paragraphs */
+      font-size: 30px;
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px){
+
+  
+  #Top_bar {
+
+    #Logo_div img {
+      width: 135px; /* 0.75 times the doubled width for smaller screens */
+      height: 97.5px;
+    }
+  
+    #Pages_div{
+      a { /* 0.75 times the doubled font size for smaller screens */
+        margin-right: 15px; /* 0.75 times the doubled spacing for smaller screens */
+      }
+    }
+  }
+  
+  #Steak_div {
+
+    #Steak_img {
+      height: 450px; /* 0.75 times the doubled height for Steak_img */
+    }
+  
+    #Steak_info {
+      bottom: 225px; /* 0.75 times the doubled bottom position */
+      left: 37.5px; /* 0.75 times the doubled left position */
+      font-size: 37.5px; /* 0.75 times the doubled font size */
+      width: 450px; /* 0.75 times the doubled width */
+    }
+  }
+
+  
+  #Burger_div {
+    .Food_burger {
+      margin-top: 37.5px; /* 0.75 times the doubled margin-top for Food_burger */
+      margin-left: 37.5px; /* 0.75 times the doubled margin-left for Food_burger */
+      width: 300px; /* 0.75 times the doubled width for Food_burger */
+    }
+  }
+  
+  #Burger_description {
+    width: 933px; /* 0.75 times the doubled width for Burger_description */
+    margin-bottom: 37.5px; /* 0.75 times the doubled margin-bottom for Burger_description */
+    margin-top: 15px; /* 0.75 times the doubled margin-top for Burger_description */
+  
+    p {
+      width: 202.5px; /* 0.75 times the doubled width for paragraphs */
+      margin-right: 123px; /* 0.75 times the doubled margin-right for paragraphs */
+    }
+  }
+  
+
+}
+
+
+/* Styles for mobile displays (360x640 through 414x896) */
+@media only screen and (max-width: 1000px){
+
+  /* Styles for desktop displays (1280x720 through 1920x1080) */
+
+  #Top_bar {
+
+    #Logo_div img {
+      width: 90px; /* Full width for smaller screens */
+      height: 65px;
+    } 
+
+    #Pages_div{
+      a{
+        font-size: 22.5px;
+        margin-right: 10px; /* Adjust spacing for smaller screens */
+      }
+    }
+  }
+
+  #Steak_div 
+  {
+    #Steak_img{
+      height: 300px;
+    }
+  
+    #Steak_info{
+      bottom: 150px;
+      left: 25px;
+      font-size: 25px;
+      width: 300px;
+    }
+  
+  }
+
+  #Burger_div{
+  
+    .Food_burger{
+      margin-top: 25px;
+      margin-left: 25px;
+      width: 200px;
+    }
+  
+  }
+
+  #Burger_description{
+    width: 622px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    
+    p{
+      width: 135px;
+      margin-right: 82px;
+    }
+  
+  }
+
+}
+    
+@media only screen and (max-width: 700px) {
+  /* Styles for desktop displays (1280x720 through 1920x1080) */
+
+  #Top_bar {
+    #Logo_div img {
+      width: 67.5px; /* 25% smaller width for smaller screens */
+      height: 48.75px; /* 25% smaller height for smaller screens */
+    }
+
+    #Pages_div a {
+      font-size: 16.875px; /* 25% smaller font size */
+      margin-right: 7.5px; /* 25% smaller spacing for smaller screens */
+    }
+  }
+
+  #Steak_div #Steak_img {
+    height: 225px; /* 25% smaller height for Steak_img */
+  }
+
+  #Steak_div #Steak_info {
+    bottom: 112.5px; /* 25% smaller bottom position */
+    left: 18.75px; /* 25% smaller left position */
+    font-size: 18.75px; /* 25% smaller font size */
+    width: 225px; /* 25% smaller width */
+  }
+
+  #Food_div a {
+    font-size: 16.875px; /* 25% smaller font size */
+  }
+
+  #Burger_div .Food_burger {
+    margin-top: 18.75px; /* 25% smaller margin-top for Food_burger */
+    margin-left: 18.75px; /* 25% smaller margin-left for Food_burger */
+    width: 150px; /* 25% smaller width for Food_burger */
+  }
+
+  #Burger_description {
+    width: 466.5px; /* 25% smaller width for Burger_description */
+    margin-bottom: 18.75px; /* 25% smaller margin-bottom for Burger_description */
+    margin-top: 7.5px; /* 25% smaller margin-top for Burger_description */
+
+    p {
+      width: 101.25px; /* 25% smaller width for paragraphs */
+      margin-right: 61.5px; /* 25% smaller margin-right for paragraphs */
+      font-size: 10px;
+    }
+  }
+}
+

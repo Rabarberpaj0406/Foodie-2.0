@@ -1,0 +1,168 @@
+/* Reset margin for all elements */
+* {
+  margin: 0;
+}
+
+/* Styles for the top bar */
+#Top_bar {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  /* Logo section */
+  /* Navigation pages section */
+}
+#Top_bar #Logo_div img {
+  width: 180px;
+  height: 130px;
+}
+#Top_bar #Pages_div {
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  /* Highlighted page */
+}
+#Top_bar #Pages_div #OnThis_page {
+  font-weight: bold;
+}
+#Top_bar #Pages_div a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Inter";
+  color: black;
+  margin-right: 20px;
+}
+
+/* Contact Us section */
+#ContactUs_div {
+  position: relative;
+  /* Contact Us image */
+  /* Contact Us text */
+}
+#ContactUs_div #ContactUs_img {
+  width: 100vw;
+  height: 600px;
+}
+#ContactUs_div #ContactUs_txt {
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Social Media section */
+#SocialMedia_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  margin: auto;
+  margin-right: 15vw;
+  /* Social Media image */
+  /* Social Media icon */
+}
+#SocialMedia_div .SocialMedia_img {
+  margin-top: 50px;
+}
+#SocialMedia_div .fa-phone {
+  font-size: 150px;
+}
+#SocialMedia_div div {
+  width: fit-content;
+  margin-top: 65px;
+}
+
+/* Social Media description section */
+#SocialMedia_description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 10vw;
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+#SocialMedia_description div p {
+  font-family: "Karla", sans-serif;
+  margin-right: 10vw;
+  width: fit-content;
+}
+#SocialMedia_description .Contact_info {
+  width: 270px;
+}
+#SocialMedia_description .ContactInfo_header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 1921px) {
+  /* Styles for larger screens */
+  #Top_bar {
+    height: 100px;
+  }
+  #Top_bar #Logo_div img {
+    width: 270px;
+    height: 195px;
+  }
+  #Top_bar #Pages_div a {
+    margin-right: 30px;
+    font-size: 50px;
+  }
+  #ContactUs_div #ContactUs_img {
+    height: 900px;
+  }
+  #ContactUs_div #ContactUs_txt {
+    font-size: 80px;
+  }
+}
+/* Media queries for screens between 1000px and 1300px */
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  #Top_bar #Logo_div img {
+    width: 135px;
+    height: 97.5px;
+  }
+  #Top_bar #Pages_div a {
+    margin-right: 15px;
+  }
+  #ContactUs_div #ContactUs_img {
+    height: 450px;
+  }
+  #ContactUs_div #ContactUs_txt {
+    font-size: 37.5px;
+  }
+}
+/* Media queries for screens up to 1000px */
+@media only screen and (max-width: 1000px) {
+  #Top_bar #Logo_div img {
+    width: 90px;
+    height: 65px;
+  }
+  #Top_bar #Pages_div a {
+    font-size: 22.5px;
+    margin-right: 10px;
+  }
+  #ContactUs_div #ContactUs_img {
+    height: 300px;
+  }
+  #ContactUs_div #ContactUs_txt {
+    font-size: 25px;
+  }
+}
+/* Media queries for screens up to 700px */
+@media only screen and (max-width: 700px) {
+  #Top_bar #Logo_div img {
+    width: 67.5px;
+    height: 48.75px;
+  }
+  #Top_bar #Pages_div a {
+    font-size: 16.875px;
+    margin-right: 7.5px;
+  }
+  #ContactUs_div #ContactUs_img {
+    height: 225px;
+  }
+  #ContactUs_div #ContactUs_txt {
+    font-size: 18.75px;
+  }
+}
